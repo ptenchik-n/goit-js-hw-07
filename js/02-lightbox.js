@@ -19,16 +19,6 @@ function createGalleryItemsMarkup(items) {
 </li>`
   }).join('');
 }
-function handleClick(event) {
-  event.preventDefault();
-
-  if (!event.target.classList.contains("gallery__image")) {
-    return;
-  };
-
-  const originalImageURL = event.target.dataset.source;
-}
-
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt', captionPosition: 'bottom', captionDelay: 250
