@@ -3,10 +3,10 @@ import { galleryItems } from './gallery-items.js';
 
 
     
-const container = document.querySelector(".gallery")
+const galleryWharehouse = document.querySelector(".gallery")
 
-container.insertAdjacentHTML("beforeend", createMarkup(galleryItems))
-container.addEventListener("click", handleClick)
+galleryWharehouse.insertAdjacentHTML("beforeend", createMarkup(galleryItems))
+galleryWharehouse.addEventListener("click", handleClick)
 
 function createMarkup(arr) {
     return arr.map(({ preview, original, description }) => `
@@ -51,9 +51,7 @@ function handleClick(event) {
 
 
         
-console.log(handleClick(event));
 
-// console.log(galleryItems);
 
 
 
